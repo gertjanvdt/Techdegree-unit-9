@@ -1,18 +1,82 @@
 * {
   box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+}
+
+nav {
+  background-color: #121921;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5em;
+}
+.nav-links-container {
+  width: 80%;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-icon {
+  height: 40px;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+  color: lightgrey;
+}
+
+.small {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 1em;
+  border: white 2px solid;
+}
+
+.header_name,
+.nav-link-text {
+  display: none;
 }
 
 .jumbotron {
-  /* background: #b5b5b5; */
-  background-image: linear-gradient(#b5b5b5, white);
+  background-image: none;
   display: flex;
   flex-direction: column-reverse;
   padding-bottom: 15em;
-  margin-bottom: -7em;
+  margin-bottom: -15em;
+}
+
+.sub-header {
+  background-color: #404040;
+  padding: 1em 0;
+}
+
+.sub-h1 {
+  background: white;
+  width: 90%;
+  margin: auto;
+  border-radius: 50px;
+  font-size: 22px;
+  text-align: center;
+  padding: 0.5em 0;
 }
 
 .window {
-  width: 90%;
+  width: 95%;
   height: 100%;
   border: 3px white solid;
   padding: 0;
@@ -53,6 +117,12 @@
   background-color: green;
 }
 
-.carousel {
-  overflow: hidden;
+main {
+  background-color: #e9ecef;
+}
+
+@media (min-width: 768px) {
+  .header_name {
+    display: inline;
+  }
 }
