@@ -115,6 +115,8 @@ MAIN SECTION
   text-align: center;
 }
 
+/* PORTFOLIO SECTION  */
+
 /* PROJECT CARD */
 .project-card {
   width: 90%;
@@ -176,8 +178,116 @@ MAIN SECTION
   height: 30px;
 }
 
-#about {
-  background: lightgray;
+/* ABOUT ME SECTION */
+
+.about-img {
+  width: 60%;
+  margin: auto;
+  display: block;
+  border-radius: 20%;
+  border: 3px solid;
+}
+
+.about-description {
+  padding: 1em;
+}
+/* SLIDER */
+
+.slider {
+  background-image: url("../img/desk.jpg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: black;
+  opacity: 0.8;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #888;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 10px;
+  background: black;
+  opacity: 0.8;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {
+  font-style: italic;
+  color: white;
+}
+
+/* Add a blue color to the author */
+.author {
+  color: white;
+  font-weight: bold;
+}
+
+/* Quote person image */
+.quote-img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 2px white solid;
 }
 
 @media (min-width: 768px) {
@@ -190,6 +300,11 @@ MAIN SECTION
   }
 
   .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .about-grid-container {
     display: grid;
     grid-template-columns: repeat(2, auto);
   }
