@@ -8,16 +8,17 @@ HEADER AND NAV
  =================== */
 
 header {
-  background-image: url("../img/js_image.jpg");
+  background-image: url("../img/laptop_code.jpeg");
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
-  background-color: #cccccc;
+  background-color: #d6c3c3;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin-bottom: 3em;
+  /* opacity: 0.8; */
 }
 
 nav {
@@ -116,6 +117,16 @@ MAIN SECTION
 }
 
 /* PORTFOLIO SECTION  */
+
+.window-view-container {
+  display: none;
+}
+
+.window-view {
+  width: 30px;
+  height: 30px;
+  margin: 0 1em;
+}
 
 /* PROJECT CARD */
 .project-card {
@@ -290,6 +301,53 @@ q {
   border: 2px white solid;
 }
 
+/* CONTACT SECTION */
+
+.contact {
+  width: 90%;
+  margin: 1em auto;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 0.5em;
+}
+
+.contact-item > img {
+  width: 50px;
+}
+
+.contact-item > p {
+  color: black;
+  margin: 0 0.5em;
+}
+
+footer {
+  background-image: url("../img/js_image.jpg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  margin-top: 3em;
+  background-color: lightgrey;
+}
+
+footer > div {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  opacity: 0.7;
+  color: white;
+}
+
+footer > div > p {
+  padding: 0 1em;
+}
+
 @media (min-width: 768px) {
   .header_name {
     display: inline;
@@ -297,6 +355,19 @@ q {
 
   .nav-links-container {
     width: 50%;
+  }
+
+  .window-view-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 90%;
+    margin: auto;
+  }
+
+  .tech {
+    width: 50px;
+    height: 50px;
   }
 
   .grid-container {
@@ -307,6 +378,17 @@ q {
   .about-grid-container {
     display: grid;
     grid-template-columns: repeat(2, auto);
+  }
+
+  .contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 900px;
+    margin: auto;
+  }
+
+  .contact {
+    width: 70%;
   }
 }
 
@@ -325,5 +407,9 @@ q {
   .grid-container {
     display: grid;
     grid-template-columns: repeat(3, auto);
+  }
+
+  footer > div > p {
+    font-size: 24px;
   }
 }
