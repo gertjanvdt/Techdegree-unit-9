@@ -3,14 +3,6 @@
   font-family: "Overpass", sans-serif;
 }
 
-#grid-view {
-  display: none;
-}
-
-/* #list-view {
-  display: none;
-} */
-
 /*==================
 HEADER AND NAV
  =================== */
@@ -208,6 +200,7 @@ MAIN SECTION
   display: flex;
   width: 90%;
   margin: 5em auto;
+  padding: 1em;
 }
 
 .project-list-card-img {
@@ -365,7 +358,8 @@ q {
   padding: 0.5em;
 }
 
-.contact-item:hover {
+.contact-item:hover,
+.project-list-card:hover {
   box-shadow: 2px 2px 15px 8px rgba(0, 0, 0, 0.75);
 }
 
@@ -445,6 +439,9 @@ footer > div > p {
   .contact {
     width: 70%;
   }
+  .hidden {
+    display: none;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -460,7 +457,6 @@ footer > div > p {
     width: 40%;
   }
   .grid-container {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
 

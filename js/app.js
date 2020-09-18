@@ -1,3 +1,21 @@
+// GRID AND LIST TOGGLE
+const showListView = document.getElementById("toggle-list-view");
+const showGridView = document.getElementById("toggle-grid-view");
+const gridView = document.getElementById("grid-view");
+const listView = document.getElementById("list-view");
+
+showGridView.addEventListener("click", (e) => {
+  gridView.classList.remove("hidden");
+  listView.classList.add("hidden");
+});
+
+showListView.addEventListener("click", (e) => {
+  console.log("listview");
+  gridView.classList.add("hidden");
+  listView.classList.remove("hidden");
+});
+
+// RECOMMENDATION SLIDER
 var slideIndex = 1;
 showSlides(slideIndex);
 
