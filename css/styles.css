@@ -46,6 +46,17 @@ nav {
   color: black;
 }
 
+.btn:hover,
+.header-action-button:hover {
+  background-color: white;
+  color: black;
+}
+
+.black:hover {
+  background-color: black;
+  color: white;
+}
+
 .header-down-arrow {
   width: 55px;
   margin: 1em auto;
@@ -478,6 +489,11 @@ footer > div > p {
   .nav-link-text {
     display: inline;
     color: white;
+    padding: 0.5em;
+  }
+
+  .nav-link-text:hover {
+    border-bottom: 2px solid white;
   }
 
   .nav-links-container {
