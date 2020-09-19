@@ -123,15 +123,41 @@ MAIN SECTION
 }
 
 /* PORTFOLIO SECTION  */
+.portfolio {
+  width: 90%;
+  margin: auto;
+}
 
+/* VIEW TYPE TOGGLE */
 .window-view-container {
   display: none;
+}
+
+.toggle-box {
+  display: flex;
+  border: 2px solid;
+  border-radius: 8px;
+  position: relative;
+}
+
+.toggle-box > div {
+  padding: 0.5em;
 }
 
 .window-view {
   width: 30px;
   height: 30px;
   margin: 0 1em;
+}
+
+.switch {
+  height: 100%;
+  width: 50%;
+  background: #d4d4d4;
+  position: absolute;
+  z-index: -99;
+  right: 0;
+  transition: right 0.5s ease;
 }
 
 /* PROJECT CARD GRID VIEW */
@@ -179,6 +205,7 @@ MAIN SECTION
   width: 100%;
   background-color: black;
   opacity: 0;
+  transition: opacity 0.5s ease-in;
 }
 
 .card-bottom:hover {
@@ -198,9 +225,10 @@ MAIN SECTION
 /* PROJECT CARD LIST VIEW */
 .project-list-card {
   display: flex;
-  width: 90%;
-  margin: 5em auto;
+  margin: auto;
+  margin-bottom: 5em;
   padding: 1em;
+  border-radius: 8px;
 }
 
 .project-list-card-img {
@@ -393,6 +421,7 @@ footer > div {
 
 footer > div > p {
   padding: 0 1em;
+  font-size: 16px;
 }
 
 @media (min-width: 768px) {
@@ -474,8 +503,11 @@ footer > div > p {
     width: 50%;
     margin-bottom: 0;
   }
+}
 
-  footer > div > p {
-    font-size: 24px;
+@media (min-width: 1150px) {
+  .tech-small {
+    width: 50px;
+    height: 50px;
   }
 }

@@ -3,16 +3,22 @@ const showListView = document.getElementById("toggle-list-view");
 const showGridView = document.getElementById("toggle-grid-view");
 const gridView = document.getElementById("grid-view");
 const listView = document.getElementById("list-view");
+const slider = document.getElementById("slider");
 
 showGridView.addEventListener("click", (e) => {
-  gridView.classList.remove("hidden");
-  listView.classList.add("hidden");
+  setTimeout(() => {
+    gridView.classList.remove("hidden");
+    listView.classList.add("hidden");
+  }, 500);
+  slider.style.right = "50%";
 });
 
 showListView.addEventListener("click", (e) => {
-  console.log("listview");
-  gridView.classList.add("hidden");
-  listView.classList.remove("hidden");
+  setTimeout(() => {
+    gridView.classList.add("hidden");
+    listView.classList.remove("hidden");
+  }, 500);
+  slider.style.right = "0";
 });
 
 // RECOMMENDATION SLIDER
