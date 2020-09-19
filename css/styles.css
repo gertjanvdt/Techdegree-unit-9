@@ -156,7 +156,7 @@ MAIN SECTION
   background: #d4d4d4;
   position: absolute;
   z-index: -99;
-  right: 0;
+  right: 50%;
   transition: right 0.5s ease;
 }
 
@@ -438,7 +438,7 @@ footer > div > p {
     align-items: center;
     justify-content: flex-end;
     width: 90%;
-    margin: auto;
+    margin: 2em auto;
   }
 
   .tech {
@@ -467,9 +467,6 @@ footer > div > p {
 
   .contact {
     width: 70%;
-  }
-  .hidden {
-    display: none;
   }
 }
 
@@ -510,4 +507,8 @@ footer > div > p {
     width: 50px;
     height: 50px;
   }
+}
+
+.hidden {
+  display: none;
 }
